@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* A (ridiculously) simplified version of normalize.css */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+p {
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 16px;
+}
+
+h3 {
+    margin-top: 32px;
+}
+
+h4 {
+    margin-bottom: 8px;
+}
+
+.chart {
+    height: 400px;
+    margin: 16px 0;
+    display: flex;
+}
+
+.chart-tile-1 {
+    flex: 1;
+    background-color: #556cd6;
+}
+
+.chart-tile-2 {
+    flex: 2;
+    background-color: #fbc02d;
+}
+
+.profile__description {
+    margin-bottom: 8px;
 }
